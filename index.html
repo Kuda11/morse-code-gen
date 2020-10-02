@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Code Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="./main.js" defer></script>
 </head>
 <body>
@@ -16,10 +16,14 @@
         <h2>
             Print Below
         </h2>
-        <form id="english" onsubmit="return flase;">
+        <form id="form" >
             Type here: <input type="text" id="userInput">   
-            <input type="submit" onclick="morseGen();">   
         </form>
+        <button onclick="morseGen();"> Click me</button>
+
+        <div id="morseOutput">
+
+        </div>
 
     </section>
 </body>
